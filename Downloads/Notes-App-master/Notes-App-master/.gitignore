@@ -1,0 +1,13 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.idea/dbnavigator.xml
+.idea/markdown-navigator/
+app/app-release.apk
+app/libs/
+projectFilesBackup/

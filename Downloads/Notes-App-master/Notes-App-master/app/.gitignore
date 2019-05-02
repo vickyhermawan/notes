@@ -1,0 +1,5 @@
+/build
+google-services.json
+/src/main/res/values/strings-confidential.xml
+/release/
+/debug/
