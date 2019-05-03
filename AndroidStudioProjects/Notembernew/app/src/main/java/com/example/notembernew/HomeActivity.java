@@ -1,6 +1,7 @@
 package com.example.notembernew;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.ShareActionProvider;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -36,6 +37,14 @@ public class HomeActivity extends AppCompatActivity
 
         onNavigationItemSelected(navigationView.getMenu().getItem(1));
 
+        FloatingActionButton fab = findViewById(R.id.add_notes);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, AddNotes.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -88,18 +97,6 @@ public class HomeActivity extends AppCompatActivity
             case R.id.beranda:
                 getSupportActionBar().setTitle("Beranda");
 
-                break;
-            case R.id.label:
-                getSupportActionBar().setTitle("Label");
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new BookmarkFragment()).commit();
-                break;
-            case R.id.sampah:
-                getSupportActionBar().setTitle("Sampah");
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new BookmarkFragment()).commit();
-                break;
-            case R.id.mode_malam:
-                getSupportActionBar().setTitle("Mode Malam");
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new BookmarkFragment()).commit();
                 break;
 
         }

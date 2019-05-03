@@ -25,9 +25,10 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/ic_search_black_24dp"
         android:onClick="requestApiButtonOnClick"
-        app:layout_constraintStart_toEndOf="@+id/enter_word"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -132,12 +133,12 @@
         android:layout_width="341dp"
         android:layout_height="123dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/logo_main"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/terpin" />
+        app:layout_constraintTop_toBottomOf="@+id/lain" />
 
 </android.support.constraint.ConstraintLayout>

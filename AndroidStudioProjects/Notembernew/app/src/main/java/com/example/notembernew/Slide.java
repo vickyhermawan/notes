@@ -1,5 +1,6 @@
 package com.example.notembernew;
 
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -78,8 +79,10 @@ public class Slide extends AppCompatActivity {
                 mBackBtn.setEnabled(true);
                 mBackBtn.setVisibility(View.VISIBLE);
 
-                mNextBtn.setText("Finish");
+                mNextBtn.setText("");
                 mBackBtn.setText("Back");
+
+
             }else{
                 mNextBtn.setEnabled(true);
                 mBackBtn.setEnabled(true);
@@ -95,4 +98,9 @@ public class Slide extends AppCompatActivity {
 
         }
     };
+
+    public void Tomain(View view) {
+        Intent intent = new Intent(Slide.this, HomeActivity.class);
+        startActivity(intent);
+    }
 }
